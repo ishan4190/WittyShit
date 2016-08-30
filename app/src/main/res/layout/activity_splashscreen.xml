@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="clip_vertical"
+    android:background="@color/darkOrange"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/splashLogo"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/thewittyshitlogo"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The Witty Shit"
+        android:textColor="@color/white"
+        android:layout_below="@id/splashLogo"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/logoText"
+        android:layout_marginTop="10dp"
+        android:textSize="12pt"
+
+        />
+
+    <ImageView
+        android:id="@+id/crack1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/crack"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

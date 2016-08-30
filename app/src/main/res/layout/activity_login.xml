@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkOrange"
+    tools:context="firebase.sandesh.firebaseapp.MovieDetailFragment">
+
+    <ImageView android:src="@drawable/thewittyshitlogo"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true" />
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:paddingTop="56dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Account"
+            android:id="@+id/createAccount"
+            android:layout_marginTop="30dp"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center" />
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:id="@+id/textDesignLayout"
+            android:layout_below="@id/createAccount"
+            android:layout_marginBottom="8dp">
+
+            <EditText  android:id="@+id/edit_text_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/white"
+                android:hint="Email" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <!--  Password Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_below="@id/textDesignLayout">
+            <EditText android:id="@+id/edit_text_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textColor="@color/white"
+                android:hint="Password"
+                android:textColorHint="@color/white"/>
+        </android.support.design.widget.TextInputLayout>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create User"
+            android:id="@+id/button"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:background="@color/blackfaded"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have a account ?"
+            android:textSize="20dp"
+            android:id="@+id/loginTV"
+            android:layout_below="@+id/button"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:layout_marginTop="46dp" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:id="@+id/login"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/loginTV"
+            android:background="@color/blackfaded"/>
+
+    </LinearLayout>
+</RelativeLayout>

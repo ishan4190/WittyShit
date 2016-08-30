@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">TheWittyShit</string>
+    <string name="facebook_app_id">1000961426647227</string>
+    <string name="google_app_id">AIzaSyCEHXTeMDjpMTMSOVoZ8IzFy_5fMlZG5Xg</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyBr05XlPDCnn0w8JAv4dgo-rTt2vwQoUwc</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_add_button">addButton</string>
+    <string name="title_activity_get_location">getLocation</string>
+
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur magna tortor, semper eu feugiat eu, vehicula vitae lacus.</string>
+    <string name="recyclerview_fab_example">RecyclerView FAB example</string>
+    <string name="floating_action_menu">Floating Action Menu</string>
+    <string name="lorem_ipsum_large">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed ultricies risus. Integer nisi orci, lacinia sit amet mi in, mollis scelerisque purus. Nunc risus ligula, maximus eu orci a, facilisis dictum velit. Proin nec laoreet magna. Nulla ut sagittis lorem. Morbi id enim fermentum, semper diam et, tempus leo. Aliquam vel congue orci. Suspendisse potenti. Curabitur finibus diam augue, vel bibendum sapien ultrices non.</string>
+    <string name="navigation_drawer_open">Navigation open</string>
+    <string name="navigation_drawer_close">Navigation close</string>
+    <string name="drawer_close">Close</string>
+    <string name="drawer_open">Open</string>
+    <string name="toolbarbottom_home">Home</string>
+    <string name="toolbarbottom_explore">Explore</string>
+    <string name="toolbarbottom_profile">Profile</string>
+    <string name="toolbarbottom_info">About Us</string>
+
+</resources>

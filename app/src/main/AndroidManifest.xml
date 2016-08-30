@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.varun.thewittyshit">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".TWSApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/wittyshitlogo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.varun.thewittyshit.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+
+        <activity
+            android:name=".Activities.Splashscreen"
+            android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".Services.PlayAudio"
+            android:enabled="true" />
+
+        <activity
+            android:name=".Activities.login"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity
+            android:name=".Activities.Activity_Profile_Main"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Profile"/>
+        <activity
+            android:name=".Activities.Activity_Home"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Home"/>
+        <activity
+            android:name=".Activities.Activity_About_Us"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="About Us"/>
+        <activity
+            android:name=".Activities.AddScreen"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Back"/>
+        <activity android:name="com.facebook.FacebookActivity" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".Activities.YoutubeDialog"></activity>
+    </application>
+
+</manifest>

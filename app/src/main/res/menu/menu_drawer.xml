@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <group>
+        <item   android:id="@+id/itemHome" android:checked="false" android:title="Home" android:icon="@drawable/ic_home_orange_24dp"/>
+        <item   android:id="@+id/itemProfile" android:checked="false" android:title="Profile" android:icon="@drawable/ic_perm_identity_orange_24dp"/>
+        <item   android:id="@+id/itemAboutUs" android:checked="false" android:title="About Us" android:icon="@drawable/ic_info_orange_24dp"/>
+
+
+    </group>
+</menu>

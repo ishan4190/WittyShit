@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawerHome"
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/darkGrey"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbarHome"
+                android:layout_height="48dp"
+                android:layout_width="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_margin="0dp"
+                android:background="@color/darkGrey">
+
+            </android.support.v7.widget.Toolbar>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/toolbarHome"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/homeContainer"
+                android:layout_margin="0dp"
+                >
+
+                <android.support.design.widget.TabLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:id="@+id/tab_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    app:tabMode="scrollable"
+                    app:tabGravity="fill"
+                    app:tabSelectedTextColor="@color/white"
+                    app:tabTextColor="@color/lightGrey"
+                    android:background="@color/darkGrey"
+                    app:tabIndicatorColor="@color/darkOrange"
+                    />
+
+
+
+                <android.support.v4.view.ViewPager
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:id="@+id/pager"
+                    tools:context=".Activity_Home"
+                    android:layout_margin="0dp"/>
+
+            </LinearLayout>
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolBarBottom"
+                android:background="@color/darkGrey"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="-2dp"
+
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="5dp"
+                    >
+
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/homeButtonBottom"
+                        android:drawableTop="@drawable/ic_home_orange_24dp"
+                        android:background="@color/darkGrey"
+                        android:text="@string/toolbarbottom_home"
+                        android:textScaleX="0.9"
+                        android:layout_marginLeft="20dp"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/profileButtonBottom"
+                        android:drawableTop="@drawable/ic_perm_identity_white_24dp"
+                        android:background="@color/darkGrey"
+                        android:layout_toRightOf="@id/homeButtonBottom"
+                        android:text="@string/toolbarbottom_profile"
+                        android:textScaleX="0.9"
+                        android:layout_marginLeft="20dp"
+
+                        />
+
+
+
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/infoButtonBottom"
+                        android:drawableTop="@drawable/ic_info_white_24dp"
+                        android:background="@color/darkGrey"
+                        android:layout_toRightOf="@id/profileButtonBottom"
+                        android:text="@string/toolbarbottom_info"
+                        android:textColor="@color/darkOrange"
+                        android:textScaleX="0.9"
+                        android:layout_marginLeft="20dp"
+
+                        />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.Toolbar>
+
+
+        </RelativeLayout>
+
+        <android.support.design.widget.NavigationView
+            android:layout_gravity="start"
+            android:id="@+id/navigation_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:menu="@menu/menu_drawer"
+            app:headerLayout="@layout/header"
+            android:background="@color/blackfaded"/>
+
+
+
+    </android.support.v4.widget.DrawerLayout>
+
+    <com.github.clans.fab.FloatingActionMenu
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="50dp"
+        android:layout_marginRight="24dp"
+        android:src="@drawable/fab_add"
+        app:fab_colorNormal="@color/colorPrimary"
+        app:fab_colorPressed="@color/colorAccent"
+        app:fab_colorRipple="@color/colorPrimary">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_camera"
+            app:fab_label="Camera"
+            app:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/gallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_gallery"
+            app:fab_label="Gallery"
+            app:fab_size="mini" />
+
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/videoLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/presence_video_online"
+            app:fab_label="Video Link"
+            app:fab_size="mini" />
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+    <WebView
+        android:id="@+id/videoView"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"/>
+
+</FrameLayout>

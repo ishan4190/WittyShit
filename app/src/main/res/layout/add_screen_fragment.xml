@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:background="@color/darkGrey"
+    tools:context="com.example.varun.addscreen.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarAddScreen"
+        android:layout_height="48dp"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:elevation="5dp"
+        android:minHeight="60dp"
+        android:background="@color/darkGrey"
+        >
+
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp">
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:id="@+id/test"
+            android:src="@drawable/explorepanda"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:background="@color/darkOrange"
+            android:layout_below="@id/test"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:id="@+id/switchContainer">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Show Content"
+                android:textColor="@color/darkGrey"
+                android:id="@+id/contentShowText"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="10dp"
+                />
+
+            <Switch
+                android:id="@+id/content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/test"
+                android:layout_marginTop="4dp"
+                android:trackTint="@color/darkGrey"
+                android:layout_marginRight="20dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location"
+                android:textColor="@color/darkGrey"
+                android:id="@+id/showLocationText"
+                android:layout_marginLeft="55dp"
+                android:layout_below="@id/contentShowText"
+                android:layout_marginTop="4dp"
+                />
+
+
+        <Switch
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/content"
+            android:layout_marginTop="4dp"
+            android:trackTint="@color/darkGrey"
+            android:layout_marginLeft="15dp"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/categoryContainer"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/switchContainer"
+            android:layout_marginTop="3dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Category"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/darkOrange"/>
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown"
+                android:layout_marginLeft="10dp"
+
+
+                />
+
+
+        </LinearLayout>
+
+
+    <!--<ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:id="@+id/test"
+        />-->
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/categoryContainer"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/description"
+        >
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            >
+            <EditText android:id="@+id/TextEnter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="@color/darkOrange"
+                android:hint="Description"
+
+                android:textColorHint="@color/darkOrange"/>
+        </android.support.design.widget.TextInputLayout>
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                >
+                <EditText android:id="@+id/Tag"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColor="@color/darkOrange"
+                    android:hint="Tag"
+                    android:digits="#abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+                    android:textColorHint="@color/darkOrange"/>
+            </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/butt"
+            android:text="Post Your Shit !"
+            android:textAllCaps="false"
+            android:textColor="@color/darkGrey"
+            android:background="@color/darkOrange"
+            />
+
+        </LinearLayout>
+
+
+
+
+    <!--<Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/location"
+        android:text="Location"/>-->
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+   <!-- <com.google.android.youtube.player.YouTubePlayerView
+        android:id="@+id/youtube_player"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+         />-->
+</LinearLayout>
